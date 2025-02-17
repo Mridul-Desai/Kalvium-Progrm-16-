@@ -34,6 +34,8 @@ function addFruit() {
 //Uses the pop() method to remove the last fruit from the list.
 //Calls displayFruits() to show the updated list.
 function removeFruit() {
+    fruits.pop();
+    displayFruits();
    
 }
 //Slice Fruits (Show the First 3 Fruits):
@@ -41,19 +43,23 @@ function removeFruit() {
 //Uses the slice() method to display only the first 3 fruits from the fruits array.
 //Call displayFruits() to show the sliced list.
 function sliceFruits() {
+    fruits.slice(0,3);
+    displayFruits();
   
 }
 // Complete the function spliceFruits() that:
 //Uses the splice() method to remove the second fruit (at index 1) from the fruits array.(donot modify in the original array)
 //Call displayFruits() to update the list.
 function spliceFruits() {
-  
+    fruits.splice(1,1);
+    displayFruits();
+    
 }
 // Complete the function mapFruits() that:
 //Uses the map() method to convert all fruit names to uppercase.
 // Call displayFruits() to display the uppercase version of the list.
 function mapFruits() {
-   
+    
 }
 
 // Implement a function filterFruits() that:
